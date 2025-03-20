@@ -1,0 +1,42 @@
+MDScreen:
+    MDGridLayout:
+        cols: 1
+        MDGridLayout:
+            cols : 1
+            size_hint_y : 0.4
+            padding : [40,20,40,20]
+            MDGridLayout:
+                cols: 2
+                padding : [20,20,20,20]
+                MDLabel:
+                    size_hint_x: 0.4
+                    text: "USERNAME"
+                    halign: "left"
+                MDTextField:
+                    hint_text: "username"
+                    mode: "rectangle"
+            MDGridLayout:
+                cols : 2
+                padding : [20,20,20,20]
+                MDLabel:
+                    size_hint_x: 0.4
+                    text: "PASSWORD"
+                    halign: "left"
+                MDTextField:
+                    hint_text: "password"
+                    mode: "rectangle"
+        MDGridLayout:
+            cols : 2
+            padding : [40,20,40,20]
+            MDRectangleFlatButton:
+                MDTextButton:
+                    text : "Add"
+            MDRectangleFlatButton:
+                MDTextButton:
+                    text : "Get"
+            MDRectangleFlatButton:
+                MDTextButton:
+                    text : "List"
+            MDRectangleFlatButton:
+                MDTextButton:
+                    text : "Delete"
