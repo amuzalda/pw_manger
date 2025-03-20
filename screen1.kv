@@ -1,3 +1,4 @@
+
 MDScreen:
     MDGridLayout:
         cols: 1
@@ -13,6 +14,7 @@ MDScreen:
                     text: "USERNAME"
                     halign: "left"
                 MDTextField:
+                    id : username
                     hint_text: "username"
                     mode: "rectangle"
             MDGridLayout:
@@ -23,6 +25,7 @@ MDScreen:
                     text: "PASSWORD"
                     halign: "left"
                 MDTextField:
+                    id :  password
                     hint_text: "password"
                     mode: "rectangle"
         MDGridLayout:
@@ -31,12 +34,16 @@ MDScreen:
             MDRectangleFlatButton:
                 MDTextButton:
                     text : "Add"
+                    on_release: app.add()
             MDRectangleFlatButton:
                 MDTextButton:
                     text : "Get"
+                    on_release: app.get()
             MDRectangleFlatButton:
                 MDTextButton:
                     text : "List"
+                    on_release: app.getlist()
             MDRectangleFlatButton:
                 MDTextButton:
                     text : "Delete"
+                    on_release: app.delete()
