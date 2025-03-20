@@ -30,20 +30,36 @@ MDScreen:
                     mode: "rectangle"
         MDGridLayout:
             cols : 2
+            canvas.before:
+                Color:
+                    rgba: 1,0,1,0
+                Rectangle:
+                    size: self.size
+                    pos: self.pos
             padding : [40,20,40,20]
+            
             MDRectangleFlatButton:
+                size_hint_x: .4
+                md_bg_color : 0,0,0.4,0.2
+                
                 MDTextButton:
                     text : "Add"
                     on_release: app.add()
             MDRectangleFlatButton:
+                size_hint_x: .4
+                md_bg_color : 0,0,0.4,0.2
                 MDTextButton:
                     text : "Get"
                     on_release: app.get()
             MDRectangleFlatButton:
+                size_hint_x: .4
+                md_bg_color : 0,0,0.4,0.2
                 MDTextButton:
                     text : "List"
                     on_release: app.getlist()
             MDRectangleFlatButton:
+                size_hint_x: .4
+                md_bg_color : 0,0,0.4,0.2
                 MDTextButton:
                     text : "Delete"
                     on_release: app.delete()
